@@ -1,5 +1,5 @@
 {
-  "name": "foundation-sites-template",
+  "name": "ls",
   "version": "1.0.0",
   "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
@@ -27,7 +27,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "git+https://github.com/zurb/foundation-sites-template.git"
   },
-  "private": true
+  "private": true,
+  "homepage": "https://github.com/zurb/foundation-sites-template#readme"
 }
