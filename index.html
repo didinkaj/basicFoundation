@@ -10,7 +10,7 @@
   <body>
     
     <!-- Start Top Bar -->
-    <div class="top-bar">
+    <div class="top-bar primary">
       <div class="top-bar-left">
         <ul class="menu">
           <li class="menu-text">Cytonn Technology  Blog</li>
@@ -20,61 +20,102 @@
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="#" data-toggle="blog">Login</a>
+           <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="blog" data-dropdown data-auto-focus="true">
+            <div class="bg-primary">
+              <a href="#">Tech Blog/</a>
+              <a href="#">Daily Report</a>
+            </div>
+          </div>
+          </li>
         </ul>
+        
       </div>
     </div>
+
+    <div class="title-bar">
+  <div class="title-bar-left">
+    <button class="menu-icon" type="button" data-open="offCanvasTop"></button>
+    <span class="title-bar-title">Foundation title bar with top off-canvas</span>
+  </div>
+  <div class="title-bar-right">
+    <button class="menu-icon" type="button" data-open="offCanvasTop"></button>
+  </div>
+</div>
     <!-- End Top Bar -->
-    <div class="callout large primary medium-9">
-      <div class="text-center">
+
+    
+
+<article class="grid-container">
+
+  <div class="callout large secondary medium-9">
+      <div class="text">
         <h1>Cytonn Technology  Blog</h1>
       </div>
     </div>
 
-<article class="grid-container">
     <div class="grid-x grid-margin-x" id="content">
+
       <div class="medium-9 cell">
-        
-
-
-        <div class="blog-post">
-          <h3>Server Administration <small>13/6/2018</small></h3>
-          <img class="thumbnail" src="https://placekitten.com/850/350?image=2">
+       <!--  blog 1 -->
+        <div class="card">
+          <img class="thumbnail" src="https://picsum.photos/850/350?image=0">
+          <div class="card-section">
+          <h3>Server Administration </h3>
           <p>Linux Administration
                     entails the upkeep, configuration, and reliable operation of a Linux system to ensure uptime,
                     efficient performance, proper utilization of resources, and security of the system. The report</p>
+                    <button type="button" class="primary button">Read More</button>
           <div class="callout">
             <ul class="menu simple">
-              <li><a href="#">Author: Didinya Johnson</a></li>
-              <li><a href="#">Comments: 3</a></li>
+               <li>Posted on June 12, 2018 by</li>
+              <li><a href="#"> Didinya Johnson</a></li>
             </ul>
           </div>
         </div>
+        </div>
+        <!-- nd of blog 1 -->
 
-        <div class="blog-post">
-          <h3>Foundation and Bootstrap <small>13/6/2018</small></h3>
-          <!-- <img class="thumbnail" src="https://placehold.it/850x350"> -->
+        <!-- blog 2 -->
+        <div class="card">
+           
           <img class="thumbnail" src="https://placekitten.com/850/350?image=2">
+          <div class="card-section">
+          <h3>Foundation and Bootstrap </h3>
           <p>Foundation is one of the advanced front-end frameworks for designing beautiful responsive websites built by ZURB in 2008, contrarily, Twitter Bootstrap is the most popular framework designed by Mark  Toto and Jacob Thornton.</p>
+            <button type="button" class="primary button">Read More</button>
           <div class="callout">
             <ul class="menu simple">
-              <li><a href="#">Author: Didinya Johnson</a></li>
-              <li><a href="#">Comments: 3</a></li>
+               <li>Posted on June 12, 2018 by</li>
+              <li><a href="#"> Didinya Johnson</a></li>
+             
             </ul>
           </div>
         </div>
+        </div>
+        <!-- end of blog 2 -->
+
       </div>
+
       <div class="medium-3 cell" data-sticky-container>
-        <div class="sticky" data-sticky data-anchor="content">
-          <h4>Most Viewed</h4>
+        <div class="cardsticky" data-sticky data-anchor="content">
+          <div class="card">
+          
+           <div class="card-section">
+            <h4>Most Viewed</h4>
           <ul>
             <li><a href="#">Foundation and Bootstrap</a></li>
             <li><a href="#">Css and Sass</a></li>
             <li><a href="#">Linux Administration</a></li>
             <li><a href="#">Control version management</a></li>
           </ul>
+        </div>
+        </div>
 
+          <div class="card">
+            <div class="card-section">
           <h4>Categories</h4>
+           
           <ul>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Reports</a></li>
@@ -82,7 +123,10 @@
             <li><a href="#">Tech</a></li>
           </ul>
         </div>
+        </div>
+        </div>
       </div>
+
     </div>
 
     <div class="grid-x cell">
